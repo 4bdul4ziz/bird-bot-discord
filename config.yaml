@@ -1,0 +1,417 @@
+# guild one:
+"355698225031806978":
+  permissions:
+    helpers: 
+      - 355698834422235136 # id role
+      - 384438571332927489 # id role
+      - 693625399757897789 # id role
+  
+    mods:
+      - 826593427865075722 # id role
+      - 827383184743202826 # id role
+
+  giveable_roles:
+    - 833461028234199080 # id role
+
+  prefix: "~"
+
+  logging:
+    default: 842383039552290846
+    moderation: 842383039552290846
+
+  custom_commands:
+    - name: secondstep
+      give_role: 830507615762120766
+      text: |
+        **First Password Correct**
+        Thank you {member}!
+
+        Now for the second password, please read the Zen Clan Family rules, then type only the second password below. (**You have 24 hours** to correctly enter the second password!) 
+        
+        **Zen Family Rules**
+        https://www.reddit.com/r/ClanZen/wiki/index
+      min_perm: helper
+      
+    - name: laststep
+      give_role: 821922727476592640
+      take_role: 830507615762120766
+      text: |
+        **Second Password Correct**
+        Thank you {member}!
+
+        Lastly, we'd like to get to know a little bit more about you!
+        Please complete the following:
+
+        1. Change your nickname to reflect your in-game name (Instructions are pinned in channel or can type _!instructions_)
+        2. Post your in-game #tag
+        3. Post screenshots of your base and your current troop/spell levels
+        4. Please give us a few details about your clash style! How do you like to play? (ex. farm, war, preferred strats)
+        5. When you're finished, please ping <@&827383184743202826> and someone will be with your shortly!
+      min_perm: helper
+  
+    - name: academywelcome
+      give_role: 693625860787273778
+      take_role: 
+        - 821922727476592640
+        - 827012894087577642
+        - 830507615762120766
+        - 821922696379760670
+        - 821922709562064896
+        - 821922710527541258
+        
+      text: |
+        Welcome to Zen Academy! Have a look around and let us know if you have any questions.
+
+        Here is a quick guide to some channels in our server - 
+        Please be sure to visit the first two!
+        <#792201102199619604> - Answers to FAQ & Overview 
+        <#826578719535398942> - Claim Your TH Role!
+
+        <#808161761717911562> - For Calling War Bases
+        <#693641906734759946> - Clan-Wide & CWL Info
+        <#693642268091089098> - War Talk & Planning
+        <#693642515965935657> - General Talk & Questions
+      min_perm: helper
+      
+    - name: zenithwelcome
+      give_role: 384436509568401408
+      take_role: 
+        - 821922727476592640
+        - 827012894087577642
+        - 830507615762120766
+        - 821922696379760670
+        - 821922709562064896
+        - 821922710527541258
+        
+      text: | 
+        Welcome to Zenith! Have a look around and let us know if you have any questions. 
+
+        Here is a quick guide to some channels in our server - 
+        Please be sure to visit the first two!
+        <#810950840876924928> - Answers to FAQ & Overview 
+        <#826578719535398942> - Claim Your TH Role!
+
+        <#808161202399871026> - For Calling War Bases
+        <#384437731050258435> - Clan-Wide & CWL Info
+        <#384438489959366676> - War Talk & Planning
+        <#384447650256257037> - General Talk & Questions
+
+        When you are ready for your friendly-challenges (FCs) please tag <@&842491912597274644> and they'll get you sorted out.
+
+      min_perm: helper
+      
+    - name: zenwelcome
+      give_role: 355699265609400330
+      take_role: 
+        - 821922727476592640
+        - 827012894087577642
+        - 830507615762120766
+        - 821922696379760670
+        - 821922709562064896
+        - 821922710527541258
+      
+      text: |
+        Welcome to Zen! Have a look around and let us know if you have any questions. 
+
+        Here is a quick guide to some channels in our server - 
+        Please be sure to visit the first two!
+        <#826162457516179486> - Answers to FAQ & Overview 
+        <#826578719535398942> - Claim Your TH Role!
+
+        <#808158270438375424> - For Calling War Bases
+        <#355777399096606742> - Clan-Wide & CWL Info
+        <#737182413675036713> - War Talk & Planning
+        <#379988150702833676> - General Talk & Questions
+
+        When you are ready for your friendly-challenges (FCs) please tag @Helper and they'll get you sorted out.
+      min_perm: helper
+
+    - name: zenwelcome
+      give_role: 355699265609400330
+      take_role: 
+        - 821922727476592640
+        - 827012894087577642
+        - 830507615762120766
+        - 821922696379760670
+        - 821922709562064896
+        - 821922710527541258
+        
+      text: |
+        Please welcome a new Friend of Zen!
+        <#379988284769828864> - General talk.. Kinda self explanatory!
+        <#384804110291173388> - Where we talk Clash!
+        <#356051234513354753> - Videos, Clash Updates & Content Creators!
+        <#799731522835185696> - Can introduce yourself here!
+        <#749110784692453417> - News & Events from the mothership, RCS Family!
+        <#808173961946857493> - To join one of our family's clans!
+      min_perm: helper
+      
+
+  verification:
+
+    - action: password
+      password: rocket
+      channel: 825824394282663966
+
+    - action: give_role
+      role_id: 830507615762120766
+
+    - action: message
+      text: |
+        **First Password Correct**
+        Thank you {member}!
+
+        Now for the second password, please read the Zen Clan Family rules, then type only the second password below. (**You have 24 hours** to correctly enter the second password!) 
+        
+        **Zen Family Rules**
+        https://www.reddit.com/r/ClanZen/wiki/war_rules
+      embed: True
+      channel: 825824394282663966
+
+    - action: password
+      password: therealfamous
+      channel: 825824394282663966
+
+    - action: give_role
+      role_id: 821922727476592640
+      
+    - action: take_role
+      role_id: 830507615762120766
+      
+    - action: message
+      text:  |
+        **Second Password Correct**
+        Thank you {member}!
+
+        Lastly, we'd like to get to know a little bit more about you!
+        Please complete the following:
+
+        1. Change your nickname to reflect your in-game name (Instructions are pinned in channel or can type _!instructions_)
+        2. Post your in-game #tag
+        3. Post screenshots of your base and your current troop/spell levels
+        4. Please give us a few details about your clash style! How do you like to play? (ex. farm, war, preferred strats)
+        5. When you're finished, please ping <@&827383184743202826> and someone will be with you shortly!
+      embed: True
+      channel: 825824394282663966
+      
+# guild two: 
+"706887837483532299":
+  permissions:
+    mods:
+      - 838901741117636659 # id role
+      - 731016417293631559 # id role
+      - 706889375287476355 # id role
+
+  giveable_roles:
+    - 706889353162391614 # id role
+    - 706889715965624320 # id role
+    - 809569088460161025 # id role
+    - 706889764959158302 # id role
+    - 706933140450705429 # id role
+    - 706889800279654500 # id role
+    - 708038029268353067 # id role
+    - 706889485429768234 # id role
+
+  prefix: "~"
+
+  logging:
+    default: 763600165176475689
+    moderation: 763600165176475689
+
+  custom_commands:
+  
+    - name: academyleaderwelcome
+      give_role: 
+        - 706889353162391614
+        - 706889800279654500
+        - 708038029268353067
+      take_role: 
+        - 830453816393859160
+        
+      text: |
+        Welcome! Please read <#706929867673043035> and take a look around! If you have any questions, let <@784218241818951741> know!
+      embed: True
+      min_perm: mod
+      
+    - name: zenithleaderwelcome
+      give_role: 
+        - 706889353162391614
+        - 706889764959158302
+        - 706933140450705429
+      take_role: 
+        - 830453816393859160
+        
+      text: |
+        Welcome! Please read <#706929867673043035> and take a look around! If you have any questions, let <@784218241818951741> know!
+      embed: True
+      min_perm: mod
+      
+    - name: zenleaderwelcome
+      give_role: 
+        - 706889353162391614
+        - 706889715965624320
+        - 809569088460161025
+      take_role: 
+        - 830453816393859160
+        
+      text: |
+        Welcome! Please read <#706929867673043035> and take a look around! If you have any questions, let <@784218241818951741> know!
+      embed: True
+      min_perm: mod
+     
+    - name: retiredleadership
+      give_role: 
+        - 706889485429768234
+      take_role: 
+        - 706889353162391614
+        - 706889715965624320
+        - 809569088460161025
+        - 706889764959158302
+        - 706933140450705429
+        - 706889715965624320
+        - 809569088460161025
+      min_perm: mod
+
+
+  verification:
+
+    - action: give_role
+      role_id: 830453816393859160
+      
+    - action: message
+      text: |
+        Hey {member}, welcome to **Zen Family Archives**! Please change your nickname to include your ign and the clan you are part of leadership in.
+
+        An example would be: **__Bcuzz | Zen__** Please also type the Zen Family password to complete your verification!
+      embed: True
+      channel: 706892490770350180
+      
+    - action: password
+      password: therealfamous
+      channel: 706892490770350180
+      
+    - action: message
+      text: |
+        **Verification Complete**
+        Thank you {member}! Please ping your clan leader in this channel to be roled and verified!
+      embed: True
+      channel: 706892490770350180
+
+# guild three:
+"833459573862957157":
+  permissions:
+    mods:
+      - 835291384788418610 # id role
+
+  giveable_roles:
+    - 839608270608007188 # id role
+    - 834927599997550623 # id role
+    - 839604708297277480 # id role
+    - 839603768324915232 # id role
+    - 839603813044060161 # id role
+    - 839608255969230859 # id role
+    - 839608265423061014 # id role
+    - 839677840253517856 # id role
+
+  prefix: "~"
+
+  custom_commands:
+  
+    - name: testgive
+      give_role: 839604708297277480
+      take_role: 834927599997550623
+      text: Welcome to the Bird server!
+      min_perm: helper
+
+  verification:
+  
+    - action: give_role
+      role_id: 834927599997550623
+
+    - action: message
+      text: Welcome {member}to the server! Please read the rules and type the hidden password in our rules! Then, introduce which server your from!
+      embed: True
+      channel: 839886518880567307
+      
+    - action: password
+      password: firefly
+      channel: 839886518880567307
+      
+    - action: take_role
+      role_id: 834927599997550623
+ 
+    - action: give_role
+      role_id: 839608270608007188
+  
+      # guild four:
+"727685302486958141":
+  permissions:
+    mods:
+      - 734565563799437323 # id role
+      - 758405003525881876 # id role
+      - 734229125346361454 # id role
+
+  giveable_roles:
+    - 734229125346361454 # id role
+    - 831902236652208168 # id role
+    - 749331937029652620 # id role
+    - 749332417461878827 # id role
+    - 749332647788150844 # id role
+    - 749332789530329108 # id role
+    - 749332972767019128 # id role
+    - 835192705113129001 # id role
+    - 758507690544070696 # id role
+    - 758508260037754931 # id role
+    - 758508396328255498 # id role
+    - 758508066319630396 # id role
+    - 758509782633283584 # id role
+    - 835192599874109521 # id role
+    - 728024733622337596 # id role
+    - 728024696616124546 # id role
+    - 728024664194154538 # id role
+    - 728024633366020216 # id role
+    - 728024595440992307 # id role
+    - 835192599874109521 # id role
+
+  prefix: "!"
+  
+      # guild five:
+"563994745446072340":
+  permissions:
+    mods:
+      - 734565563799437323 # id role
+      - 758405003525881876 # id role
+      - 734229125346361454 # id role
+
+  giveable_roles:
+    - 734229125346361454 # id role
+
+  prefix: "!"
+  
+  # guild six:
+"833525893003214858":
+  permissions:
+    mods:
+      - 734565563799437323 # id role
+      - 758405003525881876 # id role
+      - 734229125346361454 # id role
+
+  giveable_roles:
+    - 734229125346361454 # id role
+
+
+  prefix: "!"
+  
+# guild seven:
+"842887692937330751":
+  permissions:
+    helpers: 
+      - 843388804962058261 # id role
+    mods:
+      - 843388698736197652 # id role
+
+  giveable_roles:
+    - 734229125346361454 # id role
+
+
+  prefix: "~"
